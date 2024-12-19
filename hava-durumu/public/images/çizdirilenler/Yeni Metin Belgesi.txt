@@ -1,0 +1,25 @@
+Clear: Açık ve güneşli hava.
+Few clouds: Az bulut.
+Scattered clouds: Dağılmış bulutlar.
+Broken clouds: Kısmi bulutlu.
+Overcast clouds: Tamamen bulutlu.
+Light rain: Hafif yağmur.
+Moderate rain: Orta şiddetli yağmur.
+Heavy rain: Yoğun yağmur.
+Very heavy rain: Çok yoğun yağmur.
+Extreme rain: Aşırı yağmur.
+Light drizzle: Hafif çiseleme.
+Heavy drizzle: Yoğun çiseleme.
+Thunderstorm with light rain: Hafif yağmur ile fırtına.
+Thunderstorm with rain: Yağmur ile fırtına.
+Thunderstorm with heavy rain: Yoğun yağmur ile fırtına.
+Thunderstorm with snow: Karla fırtına.
+Thunderstorm with hail: Dolu ile fırtına.
+Light snow: Hafif kar.
+Moderate snow: Orta şiddetli kar.
+Heavy snow: Yoğun kar.
+Very heavy snow: Çok yoğun kar.
+Mist: Hafif sis.
+Fog: Yoğun sis.
+Tornado: Hortum veya kasırga.
+Windy: Rüzgarlı.
