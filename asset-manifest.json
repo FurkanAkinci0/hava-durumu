@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/FurkanAkinci0/deneme.git/static/css/main.c59b251f.css",
+    "main.js": "/FurkanAkinci0/deneme.git/static/js/main.1bec8af3.js",
+    "index.html": "/FurkanAkinci0/deneme.git/index.html",
+    "main.c59b251f.css.map": "/FurkanAkinci0/deneme.git/static/css/main.c59b251f.css.map",
+    "main.1bec8af3.js.map": "/FurkanAkinci0/deneme.git/static/js/main.1bec8af3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59b251f.css",
+    "static/js/main.1bec8af3.js"
+  ]
+}
