@@ -49,7 +49,7 @@ function App() {
         <input
           type="text"
           className="search-box"
-          placeholder="Aramak istediğiniz şehri yazın..."
+          placeholder="Aramak istediğiniz şehiri/ilçeyi/mahalleyi yazınız."
           value={city}
           onChange={(e) => setCity(e.target.value)} 
         />
