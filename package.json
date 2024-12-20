@@ -44,7 +44,7 @@
   "devDependencies": {
     "gh-pages": "^6.2.0"
   },
-  "description": "Bu proje, React ile geliştirilmiş basit bir hava durumu uygulamasıdır.",
+  "description": "Bu proje, React ile geliştirilmiş bir hava durumu uygulamasıdır.",
   "main": "index.js",
   "keywords": [],
   "author": "",
