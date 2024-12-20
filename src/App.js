@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Weather from "./components/Weather"; // Tek bir import satırı
+import Weather from "./components/Weather"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
 
 function App() {
-  const [city, setCity] = useState(""); // Şehir adı state'i
-  const [weatherData, setWeatherData] = useState(null); // Hava durumu verisi state'i
-  const [error, setError] = useState(""); // Hata mesajı state'i
-  const [backgroundColor, setBackgroundColor] = useState(""); // Arka plan rengi state'i
-  const [showPopup, setShowPopup] = useState(false); // Popup için state
+  const [city, setCity] = useState(""); 
+  const [weatherData, setWeatherData] = useState(null); 
+  const [error, setError] = useState("");
+  const [backgroundColor, setBackgroundColor] = useState("");
+  const [showPopup, setShowPopup] = useState(false); 
 
   const fetchWeather = async () => {
     const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY; // API key'i .env'den al
@@ -18,21 +18,21 @@ function App() {
     try {
       const response = await axios.get(url);
       setWeatherData(response.data);
-      setError(""); // Hata mesajını sıfırlıyoruz
-      setBackgroundColor("#1e1e1e"); // Hava durumu verisi geldiğinde arka plan rengini değiştiriyoruz
+      setError(""); 
+      setBackgroundColor("#1e1e1e");
     } catch (err) {
       setWeatherData(null);
       setError("Şehir bulunamadı veya API hatası oluştu.");
-      setBackgroundColor(""); // Hata durumunda arka planı sıfırlıyoruz
+      setBackgroundColor(""); 
     }
   };
 
   const handleAboutClick = () => {
-    setShowPopup(true); // Popup'ı göster
+    setShowPopup(true); 
   };
 
   const closePopup = () => {
-    setShowPopup(false); // Popup'ı kapat
+    setShowPopup(false); 
   };
 
   return (
@@ -46,7 +46,7 @@ function App() {
           className="search-box"
           placeholder="Aramak istediğiniz şehri yazın..."
           value={city}
-          onChange={(e) => setCity(e.target.value)} // Şehir adı state'ini güncelliyoruz
+          onChange={(e) => setCity(e.target.value)} 
         />
         <button className="search-button" onClick={fetchWeather} style={{ marginLeft: "10px" }}>
           Ara
