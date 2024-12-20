@@ -12,7 +12,7 @@ function App() {
   const [showPopup, setShowPopup] = useState(false); // Popup için state
 
   const fetchWeather = async () => {
-    const apiKey = "2141b363d2e0f40b79fadead73978b53"; // OpenWeatherMap API Key
+    const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY; // API key'i .env'den al
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=tr`;
 
     try {

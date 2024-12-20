@@ -8,6 +8,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^3.3.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
@@ -41,5 +43,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.2.0"
-  }
+  },
+  "description": "Bu proje, React ile geliştirilmiş basit bir hava durumu uygulamasıdır.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
