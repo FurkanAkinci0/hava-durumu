@@ -26,7 +26,12 @@ function App() {
       setBackgroundColor(""); 
     }
   };
-
+  
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      fetchWeather();
+    }
+ };
   const handleAboutClick = () => {
     setShowPopup(true); 
   };
