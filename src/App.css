@@ -1,42 +1,39 @@
-/* Sayfa genel arka plan rengi */
+
 body {
-  background-color: #1c1c1c; /* Sayfa arka planı */
-  color: white; /* Metin rengi */
+  background-color: #1c1c1c; 
+  color: white; 
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;  /* Sayfa içeriğini yatayda ortalamak için */
-  align-items: center;      /* Sayfa içeriğini dikeyde ortalamak için */
-  height: 100vh; /* Sayfa yüksekliği %100, tam ekran boyutu */
+  justify-content: center;  
+  align-items: center;      
+  height: 100vh; 
 }
 
-/* Hava durumu container'ı (ikiye bölünmüş alan) */
 .weather-container {
   display: flex;
-  justify-content: space-between; /* Sol ve sağ tarafı hizalıyoruz */
-  align-items: center; /* Yatayda ortalama */
+  justify-content: space-between; 
+  align-items: center; 
   padding: 0px;
-  background-color: #2e2e2e; /* Arka plan rengini #2e2e2e olarak değiştiriyoruz */
+  background-color: #2e2e2e; 
   border-radius: 40px;
-  height: 400px; /* Yüksekliği artırıyoruz, sağdaki resmi tam sarması için */
+  height: 400px; 
   width: 800px;
   gap: 20px;
 }
 
-/* Sol taraf: Şehir ismi ve diğer bilgiler */
 .weather-left {
-  flex: 1; /* Sol tarafın tüm boşluğu kaplamasını sağlıyoruz */
+  flex: 1; 
   padding: 20px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Bilgileri sol üst köşeye hizalıyoruz */
+  justify-content: flex-start; 
 }
 
-/* Şehir ismi için özel stil */
 .city-name {
-  color: #0ac2ff;  /* Şehir isminin rengini mavi yapıyoruz */
+  color: #0ac2ff;  
   font-size: 2rem;
   font-weight: bold;
 }
@@ -48,74 +45,66 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
-  margin-left: 20px;  /* Sağdaki container ile arasına boşluk ekle */
+  margin-left: 20px;  
 }
 
-/* Başlık ve hava durumu bilgileri */
 .card-header, .card-body, .card-footer {
   color: #fff;
   padding: 10px;
 }
 
-/* Başlık düzenlemeleri */
 .card-header {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-/* Hava durumu verisi */
 .card-body p {
   font-size: 1.2rem;
-  margin: 5px 0;  /* Paragraflar arasına boşluk ekliyoruz */
+  margin: 5px 0;  
 }
 
-/* Hava durumu bilgileri */
 .card-body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Verilerin sola hizalanmasını sağlıyoruz */
+  align-items: flex-start; 
 }
 
-/* Mobil uyumluluk */
 @media (max-width: 768px) {
   .weather-container {
-    flex-direction: column; /* Ekran küçüldüğünde, öğeleri dikey hizalıyoruz */
-    width: 100%;  /* Tam ekran genişliği */
+    flex-direction: column; 
+    width: 100%;  
     padding: 10px;
   }
 
   .weather-left, .weather-right {
     flex: none;
-    width: 100%; /* Sağ ve sol tarafın tüm ekran genişliğini kaplamasını sağlıyoruz */
+    width: 100%;
   }
 
   .weather-right {
-    height: 200px; /* Mobilde resim boyutunu küçültme */
+    height: 200px; 
   }
 }
 
-/* Arama butonu ve Hakkında butonunun ortak stili */
 .btn-primary, .btn-info {
-  background-color: #007bff; /* Aynı mavi renk */
-  border-color: #007bff; /* Sınır rengi */
-  color: white; /* Yazı rengi beyaz */
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white; 
   
 }
 
 .btn-primary:hover, .btn-info:hover {
-  background-color: #0056b3; /* Hover (üzerine gelindiğinde) rengi */
+  background-color: #0056b3; 
   border-color: #0056b3;
 }
 
-/* Search container */
 .search-container {
   display: flex;
-  justify-content: center; /* Ortalamak için */
-  align-items: center; /* Dikey hizalama */
+  justify-content: center; 
+  align-items: center; 
   margin-top: 20px;
 }
 
-/* Search box */
 .search-box {
   width: 400px;
   height: 40px;
@@ -134,7 +123,6 @@ body {
   border: 1px solid #4285f4;
 }
 
-/* Search button */
 .search-button {
   margin-left: 10px;
   height: 40px;
