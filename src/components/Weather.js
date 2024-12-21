@@ -1,6 +1,5 @@
 import React from "react";
 
-// Ülke kodu haritası
 const countryMap = {
   TR: "Türkiye",
   US: "Amerika Birleşik Devletleri",
@@ -12,7 +11,6 @@ const countryMap = {
   CN: "Çin",
   JP: "Japonya",
   IN: "Hindistan",
-  // Daha fazla ülke eklenebilir...
 };
 
 function Weather({ data }) {
@@ -22,14 +20,12 @@ function Weather({ data }) {
 
   const { main, weather, wind, name, sys } = data;
 
-  // Hava durumu açıklamasını düzenliyoruz (ilk harfi büyük)
   const weatherCondition =
     weather[0].description.charAt(0).toUpperCase() + weather[0].description.slice(1);
 
-  const country = convertCountryCodeToName(sys.country); // Ülke kodunu tam isme çeviriyoruz
+  const country = convertCountryCodeToName(sys.country); 
   const weatherIcon = getWeatherIcon(weatherCondition);
 
-  // Tarihi alıyoruz
   const currentDate = new Date().toLocaleString("tr-TR", {
     year: "numeric",
     month: "numeric",
@@ -39,12 +35,10 @@ function Weather({ data }) {
     minute: "2-digit",
   });
 
-  // Fahrenheit sıcaklık
   const temperatureFahrenheit = Math.round((main.temp * 9) / 5 + 32);
 
-  // Ülke kodunu tam isme çeviren fonksiyon
   function convertCountryCodeToName(code) {
-    return countryMap[code] || code; // Haritada yoksa orijinal kodu döndür
+    return countryMap[code] || code; 
   }
 
   function getWeatherIcon(condition) {
@@ -66,10 +60,10 @@ function Weather({ data }) {
         <div className="card-body">
           <p>Ülke: {country}</p> {/* Ülke tam ismiyle görünecek */}
           <p>Hava Durumu: {weatherCondition}</p>
-          <p>Sıcaklık: {Math.round(main.temp)}°C ({temperatureFahrenheit}°F)</p> {/* Sıcaklık hem Celsius hem de Fahrenheit */}
+          <p>Sıcaklık: {Math.round(main.temp)}°C ({temperatureFahrenheit}°F)</p> {/* hem Celsius hem de Fahrenheit */}
           <p>Nem: {main.humidity}%</p>
-          <p>Rüzgar Hızı: {Math.round(wind.speed * 3.6)} km/h</p> {/* Rüzgar hızı tam sayı */}
-          <p>Tarih: {currentDate}</p> {/* Tarih eklendi */}
+          <p>Rüzgar Hızı: {Math.round(wind.speed * 3.6)} km/h</p> {/* Rüzgar hızı */}
+          <p>Tarih: {currentDate}</p> {/* Tarih  */}
         </div>
       </div>
 
