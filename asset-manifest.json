@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/hava-durumu/static/css/main.33dec90a.css",
+    "main.css": "/hava-durumu/static/css/main.142ebcaa.css",
     "main.js": "/hava-durumu/static/js/main.a929de92.js",
     "index.html": "/hava-durumu/index.html",
-    "main.33dec90a.css.map": "/hava-durumu/static/css/main.33dec90a.css.map",
+    "main.142ebcaa.css.map": "/hava-durumu/static/css/main.142ebcaa.css.map",
     "main.a929de92.js.map": "/hava-durumu/static/js/main.a929de92.js.map"
   },
   "entrypoints": [
-    "static/css/main.33dec90a.css",
+    "static/css/main.142ebcaa.css",
     "static/js/main.a929de92.js"
   ]
 }
