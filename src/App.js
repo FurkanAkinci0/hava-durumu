@@ -28,8 +28,8 @@ function App() {
   };
   
   const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      fetchWeather();
+  if (e.key === "Enter") {
+    fetchWeather();
     }
  };
   const handleAboutClick = () => {
@@ -52,6 +52,7 @@ function App() {
           placeholder="Aramak istediğiniz şehiri yazınız."
           value={city}
           onChange={(e) => setCity(e.target.value)} 
+		  onKeyDown={handleKeyDown}
         />
         <button className="search-button" onClick={fetchWeather} style={{ marginLeft: "10px" }}>
           Ara
