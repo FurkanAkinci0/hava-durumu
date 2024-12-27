@@ -106,7 +106,7 @@ body {
 }
 
 .search-box {
-  width: 600px;
+  width: 400px;
   height: 40px;
   padding: 10px 15px;
   font-size: 16px;
@@ -125,7 +125,6 @@ body {
 
 .search-button {
   margin-left: 10px;
-  width: 60px;
   height: 40px;
   padding: 0 20px;
   font-size: 16px;
@@ -193,4 +192,33 @@ body {
 
 .about-button:hover {
   background-color: #0056b3;
+}
+
+.popular-cities-panel {
+  position: fixed;
+  top: 150px; 
+  right: 20px;
+  width: 250px;
+  background-color: #1c1c1c;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popular-city {
+  background-color: #2e2e2e;
+  color: #0ac2ff; 
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.popular-city h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.popular-city p {
+  margin: 5px 0;
 }
